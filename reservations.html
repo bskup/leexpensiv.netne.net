@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Le Expensziv</title>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+ <div id="wrapper">
+
+  <!-- Logo image -->
+  <header role="banner">
+    <img src="images/logo.png" class="desktop" width="400" height="200" alt="Le Expensziv Logo">
+	<img src="images/logo_sm.png" class="mobile" width="200" height="100" alt="Le Expensziv Logo">
+  </header>
+  
+  <!--  Navigation -->
+  <nav role="navigation">
+   <ul class="navfade">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="menu.html">MENU</a></li>
+    <li><a href="reservations.html">RESERVATIONS</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+   </ul>
+  </nav>
+ 
+  <!-- Splash image -->
+  <div id="splash_reservations"></div>
+ 
+  <!-- reference the ID by linking to #content -->
+  <main id="content" role="main">
+  
+   <p class="centered">BOOK A TABLE</p>
+
+   <p class="centered">Required fields marked with an asterisk (*).</p>
+  
+	<div class="formcontainer"> <!-- Form container -->
+	
+	<!-- My web hosted PHP -->
+	<form action="http://leexpensziv.netne.net/reservations.php" method="POST">
+	
+	 <div class="left"> <!-- Left form column -->
+	 
+	  <div class="label">
+	   <label for="fname">First Name*: </label>
+	  </div>
+	  <div class="label">
+	   <label for="lname">Last Name*: </label>
+	  </div>
+	  <div class="label">
+	   <label for="email">E-mail: </label>
+	  </div>
+	  <div class="label">
+	   <label for="phone">Phone*: </label>
+	  </div>
+	  <div class="label">
+	   <label for="guests">Guests*: </label>
+	  </div>
+	  <div class="label">
+	   <label for="date">Date*: </label>
+	  </div>
+	  <div class="label">
+	   <label for="time">Time*: </label>
+	  </div>
+	  <div class="label">
+	   <label for="comments">Comments: </label>
+	  </div>
+	  
+	 </div> <!-- End left column -->
+	 
+	 <div class="right"> <!-- Right form column -->
+	  
+	  <div class="input">
+	   <input type="text" name="fname" id="fname" required="required">
+	  </div>
+	  <div class="input">
+	   <input type="text" name="lname" id="lname" required="required">
+	  </div>
+	  <div class="input">
+	   <input type="email" name="email" id="email">
+	  </div>
+	  <div class="input">
+	   <input type="tel" name="phone" id="phone" required="required">
+	  </div>
+	  <div class="input">
+	   <input type="number" name="guests" id="guests" min="1" max="100" required="required">
+	  </div>
+	  <div class="input">
+	   <input type="date" name="date" id="date" required="required">
+	  </div>
+	  <div class="input">
+	   <input type="time" name="time" id="time" required="required">
+	  </div>
+	  <div class="input">
+	   <textarea name="comments" id="comments" rows="2" cols="20"></textarea>
+	  </div>
+	  <br>
+	  
+	 </div> <!-- End right div -->
+	  
+	  <br>
+	  <input type="submit" value="Submit" id="submit" class="submit_btn"> 
+	  
+	</form>
+	
+	</div> <!-- End form container -->
+   
+   <br>
+
+   <!-- Footer -->
+   <footer role="contentinfo">
+    Le Expensziv<br>
+	322 W Armitage Ave<br>
+	Chicago, IL 60614<br>
+	<div class="mobile"><a href="tel:+17739293100">(773)929-3100</a><br></div>
+	<div class="desktop">(773)929-3100<br></div>
+    
+	<!-- Social media icons -->
+    <div id="social">
+     <ul>
+      <li><a href="http://www.facebook.com" target="blank">&#xe227;</a></li>
+      <li><a href="http://www.instagram.com" target="blank">&#xe300;</a></li>
+      <li><a href="http://www.twitter.com" target="blank">&#xe286;</a></li>
+     </ul>
+    </div>
+   </footer>
+  </main>
+ 
+ </div> 
+</body>
+
+</html>
